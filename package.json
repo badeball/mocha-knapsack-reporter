@@ -1,0 +1,31 @@
+{
+  "name": "@badeball/mocha-knapsack-reporter",
+  "version": "1.0.0-rc1",
+  "author": "Jonas Amundsen",
+  "license": "MIT",
+  "homepage": "https://github.com/badeball/mocha-knapsack-reporter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/badeball/mocha-knapsack-reporter.git"
+  },
+  "keywords": [
+    "mocha",
+    "mocha-reporter"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "fmt": "prettier --ignore-path .gitignore --write 'index.js'",
+    "test": "npm run test:fmt",
+    "test:fmt": "prettier --ignore-path .gitignore --check 'index.js'",
+    "prepublishOnly": "npm run test"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "peerDependencies": {
+    "mocha": "*"
+  }
+}
